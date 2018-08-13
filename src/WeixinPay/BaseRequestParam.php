@@ -1,8 +1,8 @@
 <?php
 
-namespace Jueneng\WeixinPay;
+namespace Hantanqing\WeixinPay;
 
-use Jueneng\Interfaces\SignInterface;
+use Hantanqing\Interfaces\SignInterface;
 
 abstract class BaseRequestParam
 {

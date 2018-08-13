@@ -1,15 +1,15 @@
 <?php
 
-namespace Jueneng\WeixinPay\Pay\App;
+namespace Hantanqing\WeixinPay\Pay\App;
 
 
-use Jueneng\WeixinPay\BasePay;
+use Hantanqing\WeixinPay\BasePay;
 
 class AppPay extends BasePay
 {
     public function getRequestParam($requestParamName, $params, $config, $sign)
     {
-        $className = '\Jueneng\WeixinPay\Pay\App\RequestParams\\'.$requestParamName;
+        $className = '\Hantanqing\WeixinPay\Pay\App\RequestParams\\'.$requestParamName;
 
         return new $className($params, $config, $sign);
     }

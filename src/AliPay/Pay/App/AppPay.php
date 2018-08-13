@@ -1,9 +1,9 @@
 <?php
 
-namespace Jueneng\AliPay\Pay\App;
+namespace Hantanqing\AliPay\Pay\App;
 
-use Jueneng\AliPay\BasePay;
-use Jueneng\AliPay\Pay\Common\CommonPay;
+use Hantanqing\AliPay\BasePay;
+use Hantanqing\AliPay\Pay\Common\CommonPay;
 
 /**
  * 对应新版支付宝app支付接口
@@ -19,7 +19,7 @@ class AppPay extends BasePay
 
     public function getRequestParam($requestParamName, $params, $config, $sign)
     {
-        $className = '\Jueneng\AliPay\Pay\App\RequestParams\\'.$requestParamName;
+        $className = '\Hantanqing\AliPay\Pay\App\RequestParams\\'.$requestParamName;
 
         return new $className($params, $config, $sign);
     }

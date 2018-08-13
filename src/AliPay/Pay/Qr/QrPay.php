@@ -1,9 +1,9 @@
 <?php
 
-namespace Jueneng\AliPay\Pay\Qr;
+namespace Hantanqing\AliPay\Pay\Qr;
 
-use Jueneng\AliPay\BasePay;
-use Jueneng\AliPay\Pay\Common\CommonPay;
+use Hantanqing\AliPay\BasePay;
+use Hantanqing\AliPay\Pay\Common\CommonPay;
 
 /**
  * 对应新版支付宝扫码支付接口
@@ -19,7 +19,7 @@ class QrPay extends BasePay
 
     public function getRequestParam($requestParamName, $params, $config, $sign)
     {
-        $className = '\Jueneng\AliPay\Pay\Qr\RequestParams\\'.$requestParamName;
+        $className = '\Hantanqing\AliPay\Pay\Qr\RequestParams\\'.$requestParamName;
 
         return new $className($params, $config, $sign);
     }

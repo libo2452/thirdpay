@@ -1,10 +1,10 @@
 <?php
 
-namespace Jueneng\AliPay\Pay\Common;
+namespace Hantanqing\AliPay\Pay\Common;
 
-use Jueneng\AliPay\BasePay;
-use Jueneng\AliPay\Sign\Md5Sign;
-use Jueneng\AliPay\Sign\RSASign;
+use Hantanqing\AliPay\BasePay;
+use Hantanqing\AliPay\Sign\Md5Sign;
+use Hantanqing\AliPay\Sign\RSASign;
 
 class CommonPay extends BasePay
 {
@@ -37,7 +37,7 @@ class CommonPay extends BasePay
 
     public function getRequestParam($requestParamName, $params, $config, $sign)
     {
-        $className = '\Jueneng\AliPay\Pay\Common\RequestParams\\'.$requestParamName;
+        $className = '\Hantanqing\AliPay\Pay\Common\RequestParams\\'.$requestParamName;
 
         return new $className($params, $config, $sign);
     }

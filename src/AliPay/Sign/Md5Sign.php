@@ -1,7 +1,7 @@
 <?php
-namespace Jueneng\AliPay\Sign;
+namespace Hantanqing\AliPay\Sign;
 
-use Jueneng\Interfaces\SignInterface;
+use Hantanqing\Interfaces\SignInterface;
 
 class Md5Sign implements SignInterface
 {

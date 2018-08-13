@@ -1,9 +1,9 @@
 <?php
 
-namespace Jueneng\WeixinPay;
+namespace Hantanqing\WeixinPay;
 
-use Jueneng\Interfaces\PayInterface;
-use Jueneng\WeixinPay\Sign\Md5Sign;
+use Hantanqing\Interfaces\PayInterface;
+use Hantanqing\WeixinPay\Sign\Md5Sign;
 
 /**
  * 微信支付相关处理基类

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jueneng;
+namespace Hantanqing;
 
 /**
  * 网络请求基类

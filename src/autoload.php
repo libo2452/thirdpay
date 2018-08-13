@@ -8,7 +8,7 @@
 function jn_load($classname)
 {
     //PHP 5.3以下版本不能使用__DIR__
-    $classname = str_replace('Jueneng\\', '', $classname);
+    $classname = str_replace('Hantanqing\\', '', $classname);
     $classname = str_replace('\\', '/', $classname);
     $filename = dirname(__FILE__).DIRECTORY_SEPARATOR.$classname.'.php';
 

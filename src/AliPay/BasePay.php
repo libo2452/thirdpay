@@ -1,9 +1,9 @@
 <?php
 
-namespace Jueneng\AliPay;
+namespace Hantanqing\AliPay;
 
-use Jueneng\AliPay\Sign\RSASign;
-use Jueneng\Interfaces\PayInterface;
+use Hantanqing\AliPay\Sign\RSASign;
+use Hantanqing\Interfaces\PayInterface;
 
 abstract class BasePay implements PayInterface
 {

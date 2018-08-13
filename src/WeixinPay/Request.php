@@ -1,8 +1,8 @@
 <?php
 
-namespace Jueneng\WeixinPay;
+namespace Hantanqing\WeixinPay;
 
-use Jueneng\BaseRequest;
+use Hantanqing\BaseRequest;
 
 class Request extends BaseRequest
 {

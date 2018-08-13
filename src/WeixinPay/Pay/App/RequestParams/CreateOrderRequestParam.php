@@ -1,9 +1,9 @@
 <?php
 
-namespace Jueneng\WeixinPay\Pay\App\RequestParams;
+namespace Hantanqing\WeixinPay\Pay\App\RequestParams;
 
-use Jueneng\Interfaces\SignInterface;
-use Jueneng\WeixinPay\BaseRequestParam;
+use Hantanqing\Interfaces\SignInterface;
+use Hantanqing\WeixinPay\BaseRequestParam;
 
 class CreateOrderRequestParam extends BaseRequestParam
 {

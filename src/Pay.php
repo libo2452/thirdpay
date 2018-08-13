@@ -1,20 +1,20 @@
 <?php
 
-namespace Jueneng;
+namespace Hantanqing;
 
 class Pay
 {
     private static $map = [
         'alipay' => [
-            'direct' => 'Jueneng\AliPay\Pay\Direct\DirectPay',
-            'app' => 'Jueneng\AliPay\Pay\App\AppPay',
-            'qr' => 'Jueneng\AliPay\Pay\Qr\QrPay',
-            'wap' => 'Jueneng\AliPay\Pay\Wap\WapPay',
+            'direct' => 'Hantanqing\AliPay\Pay\Direct\DirectPay',
+            'app' => 'Hantanqing\AliPay\Pay\App\AppPay',
+            'qr' => 'Hantanqing\AliPay\Pay\Qr\QrPay',
+            'wap' => 'Hantanqing\AliPay\Pay\Wap\WapPay',
         ],
         'weixinpay' => [
-            'app'=> 'Jueneng\WeixinPay\Pay\App\AppPay',
-            'js'=> 'Jueneng\WeixinPay\Pay\Js\JsPay',
-            'qr'=> 'Jueneng\WeixinPay\Pay\Qr\QrPay',
+            'app'=> 'Hantanqing\WeixinPay\Pay\App\AppPay',
+            'js'=> 'Hantanqing\WeixinPay\Pay\Js\JsPay',
+            'qr'=> 'Hantanqing\WeixinPay\Pay\Qr\QrPay',
         ]
     ];
 

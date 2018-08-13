@@ -1,7 +1,7 @@
 <?php
-namespace Jueneng\AliPay;
+namespace Hantanqing\AliPay;
 
-use Jueneng\BaseRequest;
+use Hantanqing\BaseRequest;
 
 class Request extends BaseRequest {
     /**

@@ -1,8 +1,8 @@
 <?php
-namespace Jueneng\AliPay\Pay\Direct\RequestParams;
+namespace Hantanqing\AliPay\Pay\Direct\RequestParams;
 
-use Jueneng\AliPay\BaseRequestParam;
-use Jueneng\AliPay\Helper;
+use Hantanqing\AliPay\BaseRequestParam;
+use Hantanqing\AliPay\Helper;
 
 class CreateOrderRequestParam extends BaseRequestParam
 {

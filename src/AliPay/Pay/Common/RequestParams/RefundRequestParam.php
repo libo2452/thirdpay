@@ -1,8 +1,8 @@
 <?php
-namespace Jueneng\AliPay\Pay\Common\RequestParams;
+namespace Hantanqing\AliPay\Pay\Common\RequestParams;
 
-use Jueneng\AliPay\BaseRequestParam;
-use Jueneng\AliPay\Helper;
+use Hantanqing\AliPay\BaseRequestParam;
+use Hantanqing\AliPay\Helper;
 
 class RefundRequestParam extends BaseRequestParam
 {

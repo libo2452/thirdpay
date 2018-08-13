@@ -1,6 +1,6 @@
 <?php
 
-namespace Jueneng\WeixinPay;
+namespace Hantanqing\WeixinPay;
 
 /**
  * 微信支付辅助函数类

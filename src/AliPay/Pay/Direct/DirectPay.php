@@ -1,10 +1,10 @@
 <?php
 
-namespace Jueneng\AliPay\Pay\Direct;
+namespace Hantanqing\AliPay\Pay\Direct;
 
-use Jueneng\AliPay\BasePay;
-use Jueneng\AliPay\Pay\Common\CommonPay;
-use Jueneng\AliPay\Sign\Md5Sign;
+use Hantanqing\AliPay\BasePay;
+use Hantanqing\AliPay\Pay\Common\CommonPay;
+use Hantanqing\AliPay\Sign\Md5Sign;
 
 /**
  * 对应老版支付宝即时到帐支付接口
@@ -23,7 +23,7 @@ class DirectPay extends BasePay
 
     public function getRequestParam($requestParamName, $params, $config, $sign)
     {
-        $className = '\Jueneng\AliPay\Pay\Direct\RequestParams\\'.$requestParamName;
+        $className = '\Hantanqing\AliPay\Pay\Direct\RequestParams\\'.$requestParamName;
 
         return new $className($params, $config, $sign);
     }

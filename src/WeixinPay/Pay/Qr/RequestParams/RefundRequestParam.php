@@ -1,9 +1,9 @@
 <?php
 
-namespace Jueneng\WeixinPay\Pay\Qr\RequestParams;
+namespace Hantanqing\WeixinPay\Pay\Qr\RequestParams;
 
-use Jueneng\Interfaces\SignInterface;
-use Jueneng\WeixinPay\BaseRequestParam;
+use Hantanqing\Interfaces\SignInterface;
+use Hantanqing\WeixinPay\BaseRequestParam;
 
 class RefundRequestParam extends BaseRequestParam
 {

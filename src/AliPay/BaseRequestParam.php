@@ -1,6 +1,6 @@
 <?php
 
-namespace Jueneng\AliPay;
+namespace Hantanqing\AliPay;
 
 
 abstract class BaseRequestParam

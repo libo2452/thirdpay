@@ -1,9 +1,9 @@
 <?php
 
-namespace Jueneng\AliPay\Pay\Wap;
+namespace Hantanqing\AliPay\Pay\Wap;
 
-use Jueneng\AliPay\BasePay;
-use Jueneng\AliPay\Pay\Common\CommonPay;
+use Hantanqing\AliPay\BasePay;
+use Hantanqing\AliPay\Pay\Common\CommonPay;
 
 /**
  * 对应新版支付宝wap支付接口
@@ -19,7 +19,7 @@ class WapPay extends BasePay
 
     public function getRequestParam($requestParamName, $params, $config, $sign)
     {
-        $className = '\Jueneng\AliPay\Pay\Wap\RequestParams\\'.$requestParamName;
+        $className = '\Hantanqing\AliPay\Pay\Wap\RequestParams\\'.$requestParamName;
 
         return new $className($params, $config, $sign);
     }

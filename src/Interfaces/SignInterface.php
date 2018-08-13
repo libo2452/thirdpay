@@ -1,5 +1,5 @@
 <?php
-namespace Jueneng\Interfaces;
+namespace Hantanqing\Interfaces;
 
 
 interface SignInterface
