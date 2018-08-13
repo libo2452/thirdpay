@@ -2,7 +2,7 @@
     "name": "hantanqing/thirdpay",
     "description": "微信支付和支付宝支付封装包",
     "description": "libo2452@gmail.com",
-    "license": "Apache",
+    "license": "MIT",
     "type": "package",
     "authors": [
         {
