@@ -54,6 +54,28 @@ class QrPay extends BasePay
         return $this->success('发起支付成功', $response);
     }
 
+    public function cancelOrder(Array $params)
+    {
+        $createOrderRequest = $this->getRequestParam('CancelOrderRequestParam', $params, $this->config, $this->sign);
+
+        $result = $this->executeCurlRequest($createOrderRequest);
+        $result = json_decode($result, true);
+        $sign = isset($result['sign']) ? $result['sign'] : '';
+        $response = isset($result['alipay_trade_cancel_response']) ? $result['alipay_trade_cancel_response'] : [];
+        if ($response['code'] != '10000') {
+            return $this->error($this->getErrorMessage('qrpay', $response['sub_code']), $result);
+        }
+
+        $data['sign'] = $sign;
+        $data['prestr'] = json_encode($response,  JSON_FORCE_OBJECT | JSON_UNESCAPED_UNICODE);
+
+        if (!$this->sign->verifySign($data, $this->config['ali_rsa_public_key_path'])) {
+            return $this->error('无效签名', $result);
+        }
+
+        return $this->success('发起取消订单成功', $response);
+    }
+
     public function billDownload(Array $params)
     {
         $createOrderRequest = $this->getRequestParam('BillDownloadRequestParam', $params, $this->config, $this->sign);
